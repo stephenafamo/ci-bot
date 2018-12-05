@@ -11,7 +11,7 @@ import (
 type Handlers map[string]func() http.HandlerFunc
 
 // The is used to load a handler by name
-// It send a http 500 error if the handler does not exist
+// It sends a http 500 error if the handler does not exist
 func (h Handlers) Use(name string) http.HandlerFunc {
 	method, ok := h[name]
 	if ok == false {

@@ -48,8 +48,8 @@ type SlackAction struct {
 	URL     string            `json:"url,omitempty"`
 }
 
-// SlackInteraction is a struct that descibes what we
-// would receive on our intereactions endpoint from slack
+// SlackInteraction is a struct that describes what we
+// would receive on our interactions endpoint from slack
 type SlackInteraction struct {
 	Type        string            `json:"type,omitempty"`
 	Actions     []SlackAction     `json:"actions,omitempty"`
